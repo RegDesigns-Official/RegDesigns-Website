@@ -34,50 +34,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body>  
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-
-      <div class="logo me-auto">
-      <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          
-          <li class="drop-down"><a href="#portfolio">Airports</a>
-            <ul>
-              <li><a href="phli-details.html">PHLI - Lihue Airport</a></li>
-              <li><a href="cykf-details.html">CYKF - Waterloo</a></li>
-              <li><a href="czba-details.html">CZBA - Burlington Airpark</a></li>
-              <li><a href="phog-details.html">PHOG - Kahului Airport</a></li>
-
-
-              <!-- <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </li>
-
-          <li><a href="#contact">Contact</a></li>
-          <li class="get-started"><a href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
+<div id="externalheader"></div>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -277,7 +240,7 @@
     <div class="container">
 
       <div class="section-title aos-init aos-animate" data-aos="fade-up">
-        <h2>Team</h2>
+        <h2>Executive Profiles</h2>
         <p>"Do it right, not right now."</p>
       </div>
 
@@ -296,7 +259,7 @@
             </div>
             <div class="member-info">
               <h4>David</h4>
-              <span>Founder / 3D Modeller</span>
+              <span>CEO and 3D Environment Artist</span>
               
               <section id="portfolio" class="portfolio" style="padding: 35px 0 0 0;">
                 <div class="container">
@@ -327,7 +290,7 @@
             </div>
             <div class="member-info">
               <h4>Darwin</h4>
-              <span>Co-Founder / Texture Artist</span>
+              <span>Vice President Texture Design</span>
 
               <section id="portfolio" class="portfolio" style="padding: 35px 0 0 0;">
                 <div class="container">
@@ -357,7 +320,7 @@
             </div>
             <div class="member-info">
               <h4>Nick</h4>
-              <span>Scenery Importer / SDK Specialist</span>
+              <span>Software Development Specialist</span>
 
               <section id="portfolio" class="portfolio" style="padding: 35px 0 0 0;">
                 <div class="container">
@@ -721,6 +684,10 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+( "#externalheader" ).load( "header.html" );
+
+  </script>
 </body>
 
 </html>
