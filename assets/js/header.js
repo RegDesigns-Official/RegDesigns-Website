@@ -15,6 +15,7 @@
             <ul>
               <li><a href="phli-details.html">PHLI - Lihue Airport</a></li>
               <li><a href="cykf-details.html">CYKF - Waterloo</a></li>
+              <li><a href="cnc4-details.html">CNC4 - Guelph Airpark</a></li>
               <li><a href="czba-details.html">CZBA - Burlington Airpark</a></li>
               <li><a href="phog-details.html">PHOG - Kahului Airport</a></li>
 
