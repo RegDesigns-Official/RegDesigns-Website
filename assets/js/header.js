@@ -1,4 +1,5 @@
-  <header id="header" class="fixed-top d-flex align-items-center">
+    document.write( `
+    <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
       <div class="logo me-auto">
@@ -27,3 +28,4 @@
 
     </div>
   </header><!-- End Header -->
+    `);
