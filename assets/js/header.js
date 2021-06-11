@@ -22,7 +22,7 @@
           <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
-
+          <li><a class="nav-link scrollto" href="https://my-store-b88c97.creator-spring.com/">Merch</a></li>
           <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
