@@ -1,4 +1,4 @@
-    document.write( `
+document.write(`
     <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -11,12 +11,11 @@
           <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#features">Features</a></li>
-          <li class="dropdown"><a href="#pricing"><span>Airports</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href="index.html#pricing"><span>Airports</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="phli.html">PHLI - Lihue Airport</a></li>
               <li><a href="cykf.html">CYKF - Waterloo Airport</a></li>
               <li><a href="cnc4.html">CNC4 - Guelph Airpark</a></li>
-              <li><a href="kpvu.html">KPVU - Provo Muni</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
