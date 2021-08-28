@@ -32,6 +32,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/BeerSlider.css">
 
   <!-- =======================================================
   * Template Name: FlexStart - v1.4.0
@@ -136,9 +137,18 @@
 
     </section>
     <!--End Clients Section -->
-
+    <!--Start Slider Section-->
+    <div id="slider" class="slider">
+      <div id="beer-slider" class="beer-slider" data-beer-label="Default">
+        <img src="assets/img/portfolio/cnc4/CNC4-Default.jpg" alt="Original - Man holding beer">
+        <div class="beer-reveal" data-beer-label="RegDesigns">
+          <img src="assets/img/portfolio/cnc4/CNC4REG.jpg" alt="Processed - Man holding beer">
+        </div>
+      </div>
+    </div>
+    <!--End Slider Section-->
     <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
+    <!--<section id="values" class="values">
 
       <div class="container" data-aos="fade-up">
 
@@ -178,7 +188,8 @@
 
       </div>
 
-    </section><!-- End Values Section -->
+    </section>-->
+    <!-- End Values Section -->
 
     <!-- ======= Counts Section =======
     <section id="counts" class="counts">
@@ -1236,6 +1247,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/BeerSlider.js"></script>
+  <script>
+    new BeerSlider(document.getElementById("beer-slider"), { start: 75 });
+    var slider = new BeerSlider(document.getElementById("beer-slider"));
+
+
+
+  </script>
 
 </body>
 
