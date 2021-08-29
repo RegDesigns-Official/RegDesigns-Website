@@ -29,6 +29,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/BeerSlider.css">
 
     <!-- =======================================================
   * Template Name: FlexStart - v1.4.0
@@ -69,11 +70,11 @@
                         <div class="portfolio-details-slider swiper-container">
                             <div class="swiper-wrapper align-items-center">
 
-                                <div class="swiper-slide">
+                                <!--<div class="swiper-slide">
                                     <img src="assets/img/error404.jpg" alt="">
                                 </div>
 
-                                <!--<div class="swiper-slide">
+                                <div class="swiper-slide">
                                     <img src="assets/img/portfolio/cykf/2.png" alt="">
                                 </div>
 
@@ -173,6 +174,13 @@
                         </div>
                     </div>
 
+                    <div id="beer-slider" class="beer-slider" data-beer-label="Default CZBA">
+                        <img src="assets/img/portfolio/cykf/CYKF-Reg.jpg" alt="Original - Man holding beer">
+                        <div class="beer-reveal" data-beer-label="RegDesigns CZBA">
+                            <img src="assets/img/portfolio/cykf/CYKF-Default.jpg" alt="Processed - Man holding beer">
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -252,6 +260,12 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById("beer-slider"), { start: 75 });
+        var slider = new BeerSlider(document.getElementById("beer-slider"));
+
+    </script>
 
 </body>
 
