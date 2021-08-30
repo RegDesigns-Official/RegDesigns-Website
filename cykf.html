@@ -29,7 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/BeerSlider.css">
   <!-- =======================================================
   * Template Name: FlexStart - v1.4.0
   * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
@@ -156,28 +156,96 @@
               <ul>
                 <li><strong>Airport Name</strong>: Region of Waterloo International Airport</li>
                 <li><strong>ICAO</strong>: CYKF</li>
+                <li><strong>IATA</strong>: YKF</li>
+                <li><strong>LID</strong>: None</li>
+                <li><strong>Type</strong>: Public</li>
+                <li><strong>Operator</strong>: Regional Municipality of Waterloo, Ontario</li>
+                <li><strong>Location</strong>: Woolwich, Ontario</li>
+                <li><strong>Elevation</strong>: 1,054 ft</li>
+                <br>
                 <li><strong>Project State</strong>: Released</li>
-                <li><strong>Price</strong>: $14.14 USD</li>
+                <li><strong>Price</strong>: $14.15 USD</li>
                 <li><strong>Project URL</strong>: <a
                     href="https://secure.simmarket.com/regdesigns-cykf-region-of-waterloo-international-airport-msfs.phtml">simMarket</a>,
                   MSFS
                   Marketplace</a>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <p>
-                According to Wikipedia, Region of Waterloo International Airport or Kitchener/Waterloo Airport is an
-                international airport serving the Regional Municipality of Waterloo in Woolwich, Ontario, Canada,
-                southwest of Toronto. The airport is classified as an airport of entry by Nav Canada and is staffed by
-                the Canada Border Services Agency.
-              </p>
-            </div>
           </div>
-
         </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
+    <!-- ======= About Airport Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="containter">
+        <div class="portfolio-description">
+          <p style="padding: 60px 16% 60px 16% ;background: #d7d7d7;">
+            According to Wikipedia, Burlington Airpark (CZBA), is a small, privately
+            operated general aviation registered aerodrome in rural Burlington, Ontario west of
+            Toronto. The airport was founded by Victor and Gwen Kovachik in 1962. The western
+            suburbs of Toronto grew up around it, and it is now a popular airport for Toronto-area
+            pilots and has become a thriving airport. The airport was purchased by Vince Rossi in
+            2006.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About Airport Section -->
+    <!-- ======= Slider Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="portfolio-info">
+              <h4><b>Features</b></h4>
+              <ul>
+                <li>Accurate replica of Region of Waterloo International Airport</li>
+                <li>Accurate modelling from original images and other sources</li>
+                <li>Correct runway elevations</li>
+                <li>Canadian runway lines/markings</li>
+                <li>Custom runway textures</li>
+                <li>Correct PAPI angles</li>
+                <li>Accurate approach lights</li>
+                <li>Customized ground textures</li>
+                <li>3D glass (some buildings)</li>
+                <li>Volumetric night lighting</li>
+                <li>Accurate taxi signs</li>
+                <li>Detailed airport environment</li>
+                <li>Hanger interiors (apron 2)</li>
+                <li>3D sewer grills</li>
+                <li>PBR-materials</li>
+                <li>AI-traffic compatible</li>
+                <li>Default ATC compatible</li>
+                <li>Parking lot curbs/signs/gates</li>
+                <li>Parking lot lines</li>
+                <li>Hand-placed fences</li>
+                <li>Static apron objects</li>
+                <li>Static parking lot density (per bing maps 2021)</li>
+              </ul>
+              <h4>Achievements and Remarks</h4>
+              <ul>
+                <li>First rendition of Waterloo International ever in a desktop flight simulator</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div id="beer-slider" class="beer-slider" data-beer-label="Default CYKF">
+              <img src="assets/img/portfolio/cykf/CYKF-Reg.jpg" alt="Original - Man holding beer">
+              <div class="beer-reveal" data-beer-label="RegDesigns CYKF">
+                <img src="assets/img/portfolio/cykf/CYKF-Default.jpg" alt="Processed - Man holding beer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section><!-- Slider Details -->
 
   </main><!-- End #main -->
 
@@ -250,6 +318,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/BeerSlider.js"></script>
+  <script>
+    new BeerSlider(document.getElementById("beer-slider"), { start: 75 });
+    var slider = new BeerSlider(document.getElementById("beer-slider"));
+
+
+
+  </script>
 
 </body>
 
