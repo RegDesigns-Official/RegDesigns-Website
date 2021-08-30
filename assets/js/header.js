@@ -27,16 +27,11 @@ document.write(`
             <li><a href="executiveprofile_david.html">David</a></li>
             <li><a href="executiveprofile_darwin.html">Darwin</a></li>
             <li><a href="executiveprofile_marshall.html">Marshall</a></li>
-            <li><a href="executiveprofile_nick.html">Nick</a></li>
+            <lil><a href="executiveprofile_nick.html">Nick</a></lil>
           </ul>
-
-      </ul>
-      </li>
-      <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
-      <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-      <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
-      <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
-      <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
+        <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
+        <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
+        <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
