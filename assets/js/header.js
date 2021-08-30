@@ -28,6 +28,9 @@ document.write(`
             <li><a href="executiveprofile_darwin.html">Darwin</a></li>
             <li><a href="executiveprofile_marshall.html">Marshall</a></li>
             <lil><a href="executiveprofile_nick.html">Nick</a></lil>
+            <hr style="margin: 10px 6% 10px 6%;color: black;height: 2px; border-radius: 1px;">
+            <lil><a href="https://forms.gle/N8gBSsWe5N2iyThA6">Apply Now</a></lil>
+
           </ul>
         <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
         <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
