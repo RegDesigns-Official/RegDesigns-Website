@@ -17,6 +17,7 @@ document.write(`
             <li><a href="phli.html">PHLI - Lihue Airport</a></li>
             <li><a href="cykf.html">CYKF - Waterloo Airport</a></li>
             <li><a href="cnc4.html">CNC4 - Guelph Airpark</a></li>
+            <lil><a href="czba.html">CZBA - Burlington Airpark</a></lil>
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
@@ -28,9 +29,14 @@ document.write(`
             <li><a href="executiveprofile_marshall.html">Marshall</a></li>
             <li><a href="executiveprofile_nick.html">Nick</a></li>
           </ul>
-        <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
-        <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
-        <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
+
+      </ul>
+      </li>
+      <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
+      <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+      <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
+      <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
+      <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>

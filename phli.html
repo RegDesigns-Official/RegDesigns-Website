@@ -29,7 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/BeerSlider.css">
   <!-- =======================================================
   * Template Name: FlexStart - v1.4.0
   * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
@@ -152,26 +152,79 @@
               <ul>
                 <li><strong>Airport Name</strong>: Lihue Airport</li>
                 <li><strong>ICAO</strong>: PHLI</li>
+                <li><strong>IATA</strong>: LIH</li>
+                <li><strong>LID</strong>: LIH</li>
+                <li><strong>Type</strong>: Public</li>
+                <li><strong>Operator</strong>: State of Hawaii</li>
+                <li><strong>Location</strong>: Lihue, Hawaii</li>
+                <li><strong>Elevation</strong>: 153 ft</li>
+                <br>
                 <li><strong>Project State</strong>: Released</li>
-                <li><strong>Price</strong>: $8.99</li>
-                <li><strong>Project URL</strong>:
-                  <a href="https://secure.simmarket.com/regdesigns-phli-lihue-airport-msfs.phtml">simMarket</a>, MSFS
+                <li><strong>Price</strong>: $10.60 USD</li>
+                <li><strong>Project URL</strong>: <a
+                    href="https://secure.simmarket.com/regdesigns-phli-lihue-airport-msfs.phtml">simMarket</a>, MSFS
                   Marketplace</a>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <p>
-                According to Wikipedia, Lihue Airport is a state-owned public-use airport located in the Līhuʻe CDP on
-                the southeast coast of the island of Kauaʻi in Kauai County, Hawaiʻi, United States, two nautical miles
-                east of the center of the CDP. The airport does not serve as a hub for any airline carrier.
-              </p>
-            </div>
           </div>
-
         </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
+    <!-- ======= About Airport Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="containter">
+        <div class="portfolio-description">
+          <p style="padding: 60px 16% 60px 16% ;background: #d7d7d7;">
+            According to Wikipedia, Lihue Airport is a state-owned public-use airport located in the Līhuʻe CDP on the
+            southeast coast of the island of Kauaʻi in Kauai County, Hawaiʻi, United States, two nautical miles east of
+            the center of the CDP. The airport does not serve as a hub for any airline carrier.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About Airport Section -->
+    <!-- ======= Slider Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="portfolio-info">
+              <h4><b>Features</b></h4>
+              <ul>
+                <li>Terraforming</li>
+                <li>Accurate 3D models</li>
+                <li>Surrounding Airport Elements</li>
+                <li>Correct PAPI angles</li>
+                <li>PBR-materials</li>
+                <li>4k/8k Textures</li>
+                <li>Accurate Taxi Signs</li>
+                <li>Accurate Gate Numbers</li>
+                <li>FPS friendly</li>
+              </ul>
+              <h4>Achievements and Remarks</h4>
+              <ul>
+                <li>First RegDesigns Scenery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div id="beer-slider" class="beer-slider" data-beer-label="Default PHLI">
+              <img src="assets/img/portfolio/phli/PHLI-Default.png" alt="Original - Man holding beer">
+              <div class="beer-reveal" data-beer-label="RegDesigns PHLI">
+                <img src="assets/img/portfolio/phli/PHLI-Reg.png" alt="Processed - Man holding beer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section><!-- Slider Details -->
 
   </main><!-- End #main -->
 
@@ -244,6 +297,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/BeerSlider.js"></script>
+  <script>
+    new BeerSlider(document.getElementById("beer-slider"), { start: 75 });
+    var slider = new BeerSlider(document.getElementById("beer-slider"));
+
+
+
+  </script>
 
 </body>
 
