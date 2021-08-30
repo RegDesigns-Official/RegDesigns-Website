@@ -20,7 +20,7 @@ document.write(`
             <lil><a href="czba.html">CZBA - Burlington Airpark</a></lil>
           </ul>
         </li>
-        <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
+        <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
         <li class="dropdown"><a class="nav-link scrollto" href="index.html#team"><span>Team</span> <i
               class="bi bi-chevron-down"></i></a>
           <ul>
@@ -32,7 +32,7 @@ document.write(`
 
       </ul>
       </li>
-      <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
+      <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
       <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
       <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
       <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
