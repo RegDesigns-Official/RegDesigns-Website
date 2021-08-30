@@ -20,8 +20,18 @@ document.write(`
             <lil><a href="czba.html">CZBA - Burlington Airpark</a></lil>
           </ul>
         </li>
-        <li><a class="nav-link scrollto" href="index.html#testimonials">Testinomials</a></li>
-        <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+        <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
+        <li class="dropdown"><a class="nav-link scrollto" href="index.html#team"><span>Team</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="executiveprofile_david.html">David</a></li>
+            <li><a href="executiveprofile_darwin.html">Darwin</a></li>
+            <li><a href="executiveprofile_marshall.html">Marshall</a></li>
+            <lil><a href="executiveprofile_nick.html">Nick</a></lil>
+            <hr style="margin: 10px 6% 10px 6%;color: black;height: 2px; border-radius: 1px;">
+            <lil><a href="https://forms.gle/N8gBSsWe5N2iyThA6">Apply Now</a></lil>
+
+          </ul>
         <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
         <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
         <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
