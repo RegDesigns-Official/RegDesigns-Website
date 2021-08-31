@@ -2368,3 +2368,13 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+.container {
+position: relative;
+  
+}
+
+.item {
+position: absolute;
+margin:-10% 0 0 -20%;
+}
