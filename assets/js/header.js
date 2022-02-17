@@ -14,10 +14,11 @@ document.write(`
         <li class="dropdown"><a class="nav-link scrollto" href="index.html#pricing"><span>Airports</span> <i
               class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="phli.html">PHLI - Lihue Airport</a></li>
-            <li><a href="cykf.html">CYKF - Waterloo Airport</a></li>
-            <li><a href="cnc4.html">CNC4 - Guelph Airpark</a></li>
-            <lil><a href="czba.html">CZBA - Burlington Airpark</a></lil>
+            <lil><a href="airport_cyyz.html">CYYZ - Toronto Pearson</a></lil>
+            <li><a href="airport_cykf.html">CYKF - Waterloo Airport</a></li>
+            <li><a href="airport_cnc4.html">CNC4 - Guelph Airpark</a></li>
+            <lil><a href="airport_czba.html">CZBA - Burlington Airpark</a></lil>
+            <li><a href="airport_phli.html">PHLI - Lihue Airport</a></li>
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
