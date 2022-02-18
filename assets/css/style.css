@@ -633,6 +633,24 @@ section {
   font-size: 14px;
 }
 
+.showHide { display:none; }
+
+/* Desktop*/
+@media screen and (min-width: 1024px) {
+  .showHide  { display: block; }
+  #leftside  { display: none; }
+}
+.showHide2 { display:none; }
+
+@media screen and (max-width: 1023px) {
+  .showHide2  { display: block; }
+  #leftside  { display: none; }
+}
+
+.other {
+  max-width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
