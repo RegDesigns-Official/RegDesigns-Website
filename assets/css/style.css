@@ -633,9 +633,10 @@ section {
   font-size: 14px;
 }
 
+/* Desktop*/
 .showHide { display:none; }
 
-/* Desktop*/
+
 @media screen and (min-width: 1024px) {
   .showHide  { display: block; }
   #leftside  { display: none; }
