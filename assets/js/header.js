@@ -36,7 +36,7 @@ document.write(`
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
-    <span id="sellfy-shopping-cart" data-id="6216b1a0af03c1fb8c9f7624" data-type="floating" data-text="Cart"></span> 
+    <span f id="sellfy-shopping-cart" data-id="6216b1a0af03c1fb8c9f7624" data-type="in-line" data-text="Cart"></span> 
     <script src="https://sellfy.com/js/api_buttons.js"></script>
 
   </div>
