@@ -34,11 +34,11 @@ document.write(`
 
           </ul>
         <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
-        <li><a class="nav-link scrollto" href="https://store.regdesigns.xyz">Merch</a></li>
-        <li><a class="getstarted scrollto" href="https://secure.simmarket.com/regdesigns.mhtml">Buy Now</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
+    <span f id="sellfy-shopping-cart" data-id="6216b1a0af03c1fb8c9f7624" data-type="in-line" data-text="Cart"></span> 
+    <script src="https://sellfy.com/js/api_buttons.js"></script>
 
   </div>
 </header>
