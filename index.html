@@ -17,6 +17,20 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <style>
+    #background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  </style>
+
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -52,15 +66,20 @@
   <section id="hero" class="hero d-flex align-items-center">
 
     <div class="container">
+      <video id="background-video" autoplay loop muted>
+        <source src="assets/img/portfolio/cyyz/RegDesignsCYYZTrailer.mp4" type="video/mp4">
+      </video>
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Burlington Airpark</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Grab a copy of our latest and greatest scenery, Burlington
-            Airpark!
+          <h1 data-aos="fade-up">Toronto Lester B. Pearson International Airport</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Grab a copy of our newest flagship,
+            Toronto Pearson (CYYZ) Airport
           </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="airport_czba.html"
+            </div>
+            <div class="text-center text-lg-start">
+              <a href="airport_cyyz.html"
                 class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -68,34 +87,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <div class="">
-            <svg class="" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M428.75 182.714C472.693 240.056 506.464 322.206 479.203 368.975C451.942 415.743 364.056 427.131 279.832 424.691C196.015 422.25 115.86 405.983 65.4074 345.794C14.5475 285.605 -7.42393 180.68 32.8571 126.185C72.7312 71.2822 174.044 66.8087 252.165 80.6359C330.285 94.0565 384.807 125.778 428.75 182.714Z"
-                fill="#F2F5FC" />
-            </svg>
-            <svg class="" style="margin-top:-463px;" width="520" height="520" viewBox="0 0 520 520" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="bias" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1"
-                  preserveAspectRatio="xMidYMid slice">
-                  <image height="1" width="1" preserveAspectRatio="xMidYMid slice"
-                    xlink:href="assets/img/czba-hero.png" />
-                </pattern>
-              </defs>
-              <path
-                d="M510.063 154.086C536.323 227.895 472.386 338.989 379.144 405.949C285.522 472.91 162.976 495.357 87.6219 443.234C11.887 390.731 -15.8952 263.277 18.7374 178.055C53.3699 93.2128 151.178 50.2211 258.882 47.1774C366.205 44.1337 483.422 80.2772 510.063 154.086Z"
-                fill="url(#bias)" />
-            </svg>
-          </div>
-        </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main" style="background:white">
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
 
@@ -114,7 +111,7 @@
                 we would not spend hours admiring and flying around ourselves.
               </p>
               <div class="text-center text-lg-start">
-                <a href="https://discord.gg/bBhjXyFk8d"
+                <a href="https://discord.gg/bBhjXyFk8d" target="_blank"
                   class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Join Our Discord</span>
                   <i class="bi bi-arrow-right"></i>
@@ -151,6 +148,7 @@
                   src="assets/img/clients/simmarket.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="https://fsnews.eu/"><img src="assets/img/clients/FSnews.png"
                   class="img-fluid" alt=""></a></div>
+
           </div>
         </div>
       </div>
@@ -158,17 +156,37 @@
     </section>
     <!--End Clients Section -->
     <!--Start Slider Section-->
-    <div id="slider" class="slider">
-      <header class="section-header">
-        <h2>Ultra Realistic</h2>
-        <p>Sceneries that come to life</p>
-      </header>
-      <div id="beer-slider" class="beer-slider" data-beer-label="Default CYKF">
-        <img src="assets/img/portfolio/cykf/CYKF-Default.png" alt="Original - Man holding beer">
-        <div class="beer-reveal" data-beer-label="RegDesigns CYKF">
-          <img src="assets/img/portfolio/cykf/CYKF-Reg.png" alt="Processed - Man holding beer">
+
+    <div class="showHide">
+      <!--expand/collapse div-->
+      <div class="noCollapse">
+        <center>
+          <script type="text/javascript" src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+          <canvas id='canvas' width="1900" height="1000"></canvas>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="showHide2">
+      <!--expand/collapse div-->
+      <div class="noCollapse2">
+        <div id="slider" class="slider">
+          <header class="section-header">
+            <h2>Ultra Realistic</h2>
+            <p>Sceneries that come to life</p>
+          </header>
+          <div id="beer-slider" class="beer-slider" data-beer-label="Default CYYZ">
+            <img src="assets/img/portfolio/cyyz/CYYZ-default.png" alt="Original - Man holding beer">
+            <div class="beer-reveal" data-beer-label="RegDesigns CYYZ">
+              <img src="assets/img/portfolio/cyyz/CYYZ-reg.png" alt="Processed - Man holding beer">
+            </div>
+          </div>
         </div>
       </div>
+
+
     </div>
 
     <!--End Slider Section-->
@@ -564,6 +582,16 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <span class="featured">Featured</span>
+              <h3 style="color: #b307d5;">CYYZ</h3>
+              <div class="price"><sup>$</sup>19.95<span>/USD</span></div>
+              <img src="assets/img/pricing-cyyz.png" class="img-fluid" alt="">
+              <a href="airport_cyyz.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
               <h3 style="color: #07d5c0;">CZBA</h3>
               <div class="price"><sup>$</sup>13.05<span>/USD</span></div>
               <img src="assets/img/pricing-czba.png" class="img-fluid" alt="">
@@ -589,15 +617,18 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="box">
-              <h3 style="color: #ff0071;">PHLI</h3>
-              <div class="price"><sup>$</sup>10.60<span>/USD</span></div>
-              <img src="assets/img/pricing-phli.png" class="img-fluid" alt="">
-              <a href="airport_phli.html" class="btn-buy">Buy Now</a>
+        </div>
+        <div class="row gy-4" data-aos="fade-left" style="margin-top: 5px;">
+          <center>
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="box">
+                <h3 style="color: #ff0071;">PHLI</h3>
+                <div class="price"><sup>$</sup>10.60<span>/USD</span></div>
+                <img src="assets/img/pricing-phli.png" class="img-fluid" alt="">
+                <a href="airport_phli.html" class="btn-buy">Buy Now</a>
+              </div>
             </div>
-          </div>
-
+          </center>
         </div>
 
       </div>
@@ -624,7 +655,8 @@
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
                     The scenery folder is located inside of the zipped folder that the airport is delivered in. Please
-                    unzip the folder and locate reg-airport-<icao>. This is the folder that goes into 'community' folder
+                    unzip the folder and locate reg-airport-<icao>. This is the folder that goes into 'community'
+                      folder
                   </div>
                 </div>
               </div>
@@ -632,13 +664,14 @@
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-2">
-                    Will RegDesigns sceneries be available for Xbox?
+                    Will RegDesigns sceneries be available for x-box?
                   </button>
                 </h2>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    We are currently in the process of making all our sceneries compatible with the Xbox version of
-                    Microsoft Flight Simulator 2020. Burlington will be the first available for Xbox following with our
+                    We are currently in the process of making all our sceneries compatible with the x-box version of
+                    Microsoft Flight Simulator 2020. Burlington will be the first available for x-box following with
+                    our
                     previous sceneries once updated. All new sceneries will be compatible on initial release.
                   </div>
                 </div>
@@ -978,94 +1011,84 @@
         <div class="row gy-4">
 
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"><a
-              href="executiveprofile_david.html">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/david.png" class="img-fluid" alt="">
-                  <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/RegDesignsOfficial"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/regdesignsofficial/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/regdesigns"><i class="bi bi-linkedin"></i></a>
-                </div>-->
-                </div>
-                <div class="member-info">
-                  <h4>David</h4>
-                  <span>Chief Executive Officer</span>
-                  <span>Vice President 3D Environment</span>
-                  <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/david.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:david@regdesigns.xyz"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="executiveprofile_david.html"><i class="bi bi-three-dots"></i>
                 </div>
               </div>
+              <div class="member-info">
+                <h4>David</h4>
+                <span>Chief Executive Officer</span>
+                <span>Vice President 3D Environment</span>
+                <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+              </div>
+            </div>
             </a>
           </div>
 
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200"><a
-              href="executiveprofile_darwin.html">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/darwin.png" class="img-fluid" alt="">
-                  <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/RegDesignsOfficial"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/regdesignsofficial/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/regdesigns"><i class="bi bi-linkedin"></i></a>
-                </div>-->
-                </div>
-                <div class="member-info">
-                  <h4>Darwin</h4>
-                  <span>Vice President Textural Design</span>
-                  <span>(Building Specialization)</span>
-                  <!--<p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img style="margin-left: 1px;" src="assets/img/team/darwin.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:darwin@regdesigns.xyz"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="executiveprofile_darwin.html"><i class="bi bi-three-dots"></i>
                 </div>
               </div>
+              <div class="member-info">
+                <h4>Darwin</h4>
+                <span>Vice President Textural Design</span>
+                <span>(Building Specialization)</span>
+                <!--<p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>-->
+              </div>
+            </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300"><a
-              href="executiveprofile_marshall.html">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/marshall.png" class="img-fluid" alt="">
-                  <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/RegDesignsOfficial"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/regdesignsofficial/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/regdesigns"><i class="bi bi-linkedin"></i></a>
-                </div>-->
-                </div>
-                <div class="member-info">
-                  <h4>Marshall</h4>
-                  <span>Texture Artist</span>
-                  <span>(Ground-based PBR Specialization)</span>
-                  <!--<p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/marshall.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:marshall@regdesigns.xyz"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="executiveprofile_marshall.html"><i class="bi bi-three-dots"></i>
                 </div>
               </div>
+              <div class="member-info">
+                <h4>Marshall</h4>
+                <span>Texture Artist</span>
+                <span>(Ground-based PBR Specialization)</span>
+                <!--<p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>-->
+              </div>
+            </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400"><a
-              href="executiveprofile_nick.html">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/nick.png" class="img-fluid" alt="">
-                  <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/RegDesignsOfficial"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/regdesignsofficial/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/regdesigns"><i class="bi bi-linkedin"></i></a>
-                </div>-->
-                </div>
-                <div class="member-info">
-                  <h4>Nick</h4>
-                  <span>Vice President Software Development</span>
-                  <br>
-                  <!--<p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img style="margin-left: 1px;" src="assets/img/team/nick.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:nick@regdesigns.xyz"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="executiveprofile_nick.html"><i class="bi bi-three-dots"></i>
                 </div>
               </div>
+              <div class="member-info">
+                <h4>Nick</h4>
+                <span>Vice President Software Development</span>
+                <br>
+                <!--<p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>-->
+              </div>
+            </div>
             </a>
           </div>
+
+
 
         </div>
 
@@ -1084,6 +1107,15 @@
         </header>
 
         <div class="row">
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-3.png" class="img-fluid" alt=""></div>
+              <span class="post-date">February 25, 2022</span>
+              <h3 class="post-title">RegDesigns Announces Toronto Pearson Airport for Microsoft Flight Simulator</h3>
+              <a href="https://www.thresholdx.net/news/recyyz" class="readmore stretched-link mt-auto"><span>Read
+                  More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
 
           <div class="col-lg-4">
             <div class="post-box">
@@ -1105,15 +1137,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.png" class="img-fluid" alt=""></div>
-              <span class="post-date">January 7, 2021</span>
-              <h3 class="post-title">RegDesigns Release Lihue Airport for Microsoft Flight Simulator</h3>
-              <a href="https://www.thresholdx.net/news/rdphli" class="readmore stretched-link mt-auto"><span>Read
-                  More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+
 
         </div>
 
@@ -1238,10 +1262,13 @@
             </a>
             <p>RegDesigns is a small design studio out of Toronto, and flight simulation advocates just like you.</p>
             <div class="social-links mt-3">
+              <a href="https://www.youtube.com/channel/UCt9EeDERI6dGBOaggLQrTlA" class="youtube"><i
+                  class="bi bi-youtube bx bxl-youtube"></i></a>
+              <a href="https://discord.gg/bBhjXyFk8d" class="discord"><i class="bi bi-discord"></i></a>
               <a href="https://twitter.com/Regdesignssim" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="https://www.facebook.com/RegDesignsOfficial" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/regdesignsofficial/" class="instagram"><i
-                  class="bi bi-instagram bx bxl-instagram"></i></a>
+                  class="bi bi-instagram"></i></a>
               <a href="https://www.linkedin.com/company/regdesigns" class="linkedin"><i
                   class="bi bi-linkedin bx bxl-linkedin"></i></a>
             </div>
