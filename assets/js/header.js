@@ -15,9 +15,9 @@ document.write(`
               class="bi bi-chevron-down"></i></a>
           <ul>
             <lil><a href="airport_cyyz.html">CYYZ - Toronto Pearson</a></lil>
-            <li><a href="airport_cykf.html">CYKF - Waterloo Airport</a></li>
-            <li><a href="airport_cnc4.html">CNC4 - Guelph Airpark</a></li>
             <lil><a href="airport_czba.html">CZBA - Burlington Airpark</a></lil>
+            <li><a href="airport_cnc4.html">CNC4 - Guelph Airpark</a></li>
+            <li><a href="airport_cykf.html">CYKF - Waterloo Airport</a></li>
             <li><a href="airport_phli.html">PHLI - Lihue Airport</a></li>
           </ul>
         </li>
@@ -34,12 +34,22 @@ document.write(`
 
           </ul>
         <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
+
+      
+
+
+
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
-    <span f id="sellfy-shopping-cart" data-id="6216b1a0af03c1fb8c9f7624" data-type="floating" data-text="Cart"></span> 
+    <span id="sellfy-shopping-cart" data-id="6216b1a0af03c1fb8c9f7624" style="position:static; display:inline" data-type="floating" data-text="Cart"></span> 
     <script src="https://sellfy.com/js/api_buttons.js"></script>
-
+    <style>
+    #sellfy-shopping-cart {
+      display:inline;
+      position:none;
+    }
+  </style>
   </div>
 </header>
 `);

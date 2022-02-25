@@ -17,6 +17,20 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <style>
+    #background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  </style>
+
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -52,6 +66,9 @@
   <section id="hero" class="hero d-flex align-items-center">
 
     <div class="container">
+      <video id="background-video" autoplay loop muted>
+        <source src="assets/img/portfolio/cyyz/RegDesignsCYYZTrailer.mp4" type="video/mp4">
+      </video>
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Toronto Lester B. Pearson International Airport</h1>
@@ -60,34 +77,14 @@
           </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="airport_cyyz.html" a href="airport_czba.html" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center
-                align-self-center">
+            </div>
+            <div class="text-center text-lg-start">
+              <a href="airport_cyyz.html"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <div class="">
-            <svg class="" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M428.75 182.714C472.693 240.056 506.464 322.206 479.203 368.975C451.942 415.743 364.056 427.131 279.832 424.691C196.015 422.25 115.86 405.983 65.4074 345.794C14.5475 285.605 -7.42393 180.68 32.8571 126.185C72.7312 71.2822 174.044 66.8087 252.165 80.6359C330.285 94.0565 384.807 125.778 428.75 182.714Z"
-                fill="#F2F5FC" />
-            </svg>
-            <svg class="" style="margin-top:-463px;" width="520" height="520" viewBox="0 0 520 520" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="bias" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1"
-                  preserveAspectRatio="xMidYMid slice">
-                  <image height="1" width="1" preserveAspectRatio="xMidYMid slice"
-                    xlink:href="assets/img/czba-hero.png" />
-                </pattern>
-              </defs>
-              <path
-                d="M510.063 154.086C536.323 227.895 472.386 338.989 379.144 405.949C285.522 472.91 162.976 495.357 87.6219 443.234C11.887 390.731 -15.8952 263.277 18.7374 178.055C53.3699 93.2128 151.178 50.2211 258.882 47.1774C366.205 44.1337 483.422 80.2772 510.063 154.086Z"
-                fill="url(#bias)" />
-            </svg>
           </div>
         </div>
       </div>
@@ -95,7 +92,7 @@
 
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main" style="background:white">
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
 
@@ -179,10 +176,10 @@
             <h2>Ultra Realistic</h2>
             <p>Sceneries that come to life</p>
           </header>
-          <div id="beer-slider" class="beer-slider" data-beer-label="Default CYKF">
-            <img src="assets/img/portfolio/cykf/CYKF-Default.png" alt="Original - Man holding beer">
-            <div class="beer-reveal" data-beer-label="RegDesigns CYKF">
-              <img src="assets/img/portfolio/cykf/CYKF-Reg.png" alt="Processed - Man holding beer">
+          <div id="beer-slider" class="beer-slider" data-beer-label="Default CYYZ">
+            <img src="assets/img/portfolio/cyyz/CYYZ-default.png" alt="Original - Man holding beer">
+            <div class="beer-reveal" data-beer-label="RegDesigns CYYZ">
+              <img src="assets/img/portfolio/cyyz/CYYZ-reg.png" alt="Processed - Man holding beer">
             </div>
           </div>
         </div>
@@ -585,8 +582,8 @@
             <div class="box">
               <span class="featured">Featured</span>
               <h3 style="color: #b307d5;">CYYZ</h3>
-              <div class="price"><sup>$</sup>00.00<span>/USD</span></div>
-              <img src="assets/img/pricing-czba.png" class="img-fluid" alt="">
+              <div class="price"><sup>$</sup>19.95<span>/USD</span></div>
+              <img src="assets/img/pricing-cyyz.png" class="img-fluid" alt="">
               <a href="airport_cyyz.html" class="btn-buy">Buy Now</a>
             </div>
           </div>
@@ -657,13 +654,8 @@
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
                     The scenery folder is located inside of the zipped folder that the airport is delivered in. Please
-                    <<<<<<< HEAD unzip the folder and locate reg-airport-<icao>. This is the folder that goes into
-                      'community'
+                    unzip the folder and locate reg-airport-<icao>. This is the folder that goes into 'community'
                       folder
-                      =======
-                      unzip the folder and locate reg-airport-<icao>. This is the folder that goes into 'community'
-                        folder
-                        >>>>>>> 575a10a3cc65049ed9ea2a938ec55eae99a8d5d6
                   </div>
                 </div>
               </div>
@@ -671,13 +663,14 @@
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-2">
-                    Will RegDesigns sceneries be available for Xbox?
+                    Will RegDesigns sceneries be available for x-box?
                   </button>
                 </h2>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    We are currently in the process of making all our sceneries compatible with the Xbox version of
-                    Microsoft Flight Simulator 2020. Burlington will be the first available for Xbox following with our
+                    We are currently in the process of making all our sceneries compatible with the x-box version of
+                    Microsoft Flight Simulator 2020. Burlington will be the first available for x-box following with
+                    our
                     previous sceneries once updated. All new sceneries will be compatible on initial release.
                   </div>
                 </div>
@@ -1091,43 +1084,6 @@
                 <!--<p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>-->
               </div>
             </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400"><a href="#">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/marcus.png" class="img-fluid" alt="">
-                  <!--<div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-              </div>-->
-                </div>
-                <div class="member-info">
-                  <h4>Marcus</h4>
-                  <span>Texture Artist</span>
-                  <br>
-                  <!--<p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>-->
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400"><a href="#">
-              <div class="member">
-                <div class="member-img">
-                  <img style="margin-left: 1px;" src="assets/img/team/mitchell.png" class="img-fluid" alt="">
-                  <!--<div class="social">
-                    <a href=""><i class="bi bi-envelope-fill"></i></a>
-
-                  </div> -->
-                </div>
-                <div class="member-info">
-                  <h4>Mitchell</h4>
-                  <span>3D Modeller</span>
-                  <br>
-                  <!--<p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>-->
-                </div>
-              </div>
             </a>
           </div>
 
