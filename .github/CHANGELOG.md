@@ -7,3 +7,4 @@
 ## 5.0.0
 
 1. [GITHUB] Add change log - @Awemeter (Awemeter)
+1. [CYYZ] Remove Xbox from supported platforms - @Awemeter (Awemeter)
