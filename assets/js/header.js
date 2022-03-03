@@ -34,7 +34,7 @@ document.write(`
 
           </ul>
         <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">News</a></li>
-        <a class="nav-link scrollto" href="mailto:regdesignsofficial@gmail.com">Contact Us</a>
+        <a class="nav-link scrollto" href="mailto:support.regdesigns.xyz">Contact Us</a>
 
       
 
