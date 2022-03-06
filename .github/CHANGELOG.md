@@ -9,3 +9,4 @@
 1. [GITHUB] Add change log - @Awemeter (Awemeter)
 1. [CYYZ] Remove Xbox from supported platforms - @Awemeter (Awemeter)
 1. [Header] Add Contact Us button - @Awemeter (Awemeter)
+1. [FAQ] Add new order related FAQ - @Awemeter (Awemeter)
